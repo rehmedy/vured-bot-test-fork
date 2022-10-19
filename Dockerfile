@@ -4,9 +4,7 @@ COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
 
-FROM openjdk:17-alpine
-
-RUN apk add --no-cache libstdc++
+FROM openjdk:17
 
 EXPOSE 8080
 
