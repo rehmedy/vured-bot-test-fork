@@ -33,7 +33,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          tags: jonaznas/vured-bot:latest
+          tags: rehmedy/vured-bot-test-fork:latest
           push: ${{ github.ref == 'refs/heads/main' }}
 
       - name: image digest
