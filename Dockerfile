@@ -6,6 +6,8 @@ RUN gradle build --no-daemon
 
 FROM openjdk:17-alpine
 
+RUN apk add --no-cache libstdc++
+
 EXPOSE 8080
 
 ENV BOT__TOKEN=""
